@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-carter-one: 'Carter One', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +19,43 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-montserrat), sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+nav {
+  background-color: var(--disabled-background-color);
+}
+
+ul {
+  /* background-color: var(--button-color); */
+}
+
+button:hover {
+  background-color: var(--button-hover-color);
+}
+
+li {
+  color: var(--text-secondary);
+}
+
+#tie {
+  background-color: var(--disabled-background-color);
+}
+#logo{
+  font-family: var(--font-carter-one), sans-serif;
+
+}
+#tech{
+  background-color: var(--card);
+  color: var(--text-color);
+
+}
+.icon {
+  color: var(--icon-color);
 }
 
 @layer utilities {
