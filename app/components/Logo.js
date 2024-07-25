@@ -6,8 +6,8 @@ const carterOne = Carter_One({ subsets: ['latin'], weight: '400' });
 
 const Logo = () => {
     return (
-        <div id='logo' className="cursor-pointer capitalize text-2xl">
-            <Link href="" className={carterOne.className}>
+        <div id='logo' className="cursor-pointer capitalize text-2xl lg:text-3xl">
+            <Link href="" className={`font-carter-one`}>
                 Jenifer Asnath L.
             </Link>
         </div>

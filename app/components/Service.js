@@ -45,14 +45,14 @@ const Service = () => {
       <div className="lg:w-[80%] container mx-auto ">
         <div className="flex flex-wrap justify-center">
           {services.map((service, index) => (
-            <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
-              <div id='tech' className="text-center p-6  shadow-lg rounded-lg transition duration-300">
-                <FontAwesomeIcon icon={service.icon} className="text-white text-xl p-2 mb-4 rounded-full dark:bg-[#1E1E1E]" />
+            <div key={index} className="w-full  sm:w-1/2 lg:w-1/3 p-4">
+              <div id='tech' className="text-center p-6 h-[40vh] shadow-lg rounded-lg transition duration-300 font-montserrat">
+                <FontAwesomeIcon icon={service.icon} className="text-white text-3xl  p-2 mb-4 rounded-full dark:bg-[#1E1E1E] " />
                 <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="mb-4">{service.question}</p>
+                <p className="mb-4 text-base">{service.question}</p>
                 <div className="text-left">
                   {service.details.map((detail, i) => (
-                    <div key={i} className="flex items-center mb-2">
+                    <div key={i} className="flex items-center mb-2 text-sm">
                       <span className="mr-2 text-green-500">✓</span>
                       <span>{detail}</span>
                     </div>

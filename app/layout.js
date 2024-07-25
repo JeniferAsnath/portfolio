@@ -1,6 +1,5 @@
-import { Inter, Montserrat, Open_Sans, Carter_One } from "next/font/google";
+import { Inter, Montserrat, Carter_One } from "next/font/google";
 import "./globals.css";
-// import { useTheme } from '../app/context/ThemeContext';
 
 const inter = Inter({ subsets: ['latin'] });
 const carterOne = Carter_One({ subsets: ['latin'], weight: '400' });
@@ -13,11 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${carterOne.className}`}>
+      <body className={`${inter.className}`}>
         <div className={carterOne.className}>
           {children}
         </div>
-      </body>    
+      </body>
     </html>
   );
 }

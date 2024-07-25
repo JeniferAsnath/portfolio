@@ -16,7 +16,10 @@ module.exports = {
       colors: {
         'regal-gray': '#D9D9D9'
       },
-
+      fontFamily: {
+        'carter-one': ['Carter One', 'cursive'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'swiper/css';
+@import 'swiper/css/effect-coverflow';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --font-carter-one: 'Carter One', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
 }
 
@@ -18,42 +22,55 @@
   }
 }
 
+@font-face {
+  font-family: 'Carter One';
+  src: url('/fonts/CarterOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: 'Montserrat', sans-serif; /* Appliquer Montserrat comme police de base */
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
+#titre {
+  font-family: 'Carter One';
+}
+
 nav {
   background-color: var(--disabled-background-color);
+  color: var(--text-color);
 }
 
-ul {
-  /* background-color: var(--button-color); */
-}
-
-button:hover {
-  background-color: var(--button-hover-color);
-}
-
-li {
-  color: var(--text-secondary);
+#logo {
+  /* font-family: 'Carter One', sans-serif; */
 }
 
 #tie {
   background-color: var(--disabled-background-color);
 }
-#logo{
-  font-family: var(--font-carter-one), sans-serif;
 
-}
-#tech{
+#tech {
   background-color: var(--card);
   color: var(--text-color);
-
 }
+
+#desc {
+  background-color: var(--disabled-background-color);
+  color: var(--text-color);
+}
+
 .icon {
   color: var(--icon-color);
 }
