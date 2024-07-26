@@ -57,8 +57,8 @@ const technologies = [
 
 const Expertise = () => {
   return (
-    <Section title="Mon expertise">
-      <div className="container mx-auto mt-10">
+    <Section >
+      <div className="container mx-auto ">
         <div className="flex flex-wrap justify-center">
           {technologies.map((tech, index) => (
             <div  key={index} className="w-full space-y-3  sm:w-1/2 lg:w-1/3 p-2">

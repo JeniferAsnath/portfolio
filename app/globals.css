@@ -39,7 +39,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif; /* Appliquer Montserrat comme police de base */
+  font-family: 'Montserrat', sans-serif; 
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -65,7 +65,21 @@ nav {
   background-color: var(--card);
   color: var(--text-color);
 }
-
+#pro{
+  background-color: var(--disabled-background-color);
+}
+#cv{
+  background-color: var(--card);
+  color: var(--text-color);
+}
+#cont{
+  background-color: var(--card);
+  color: var(--text-color);
+}
+#link{
+  background-color: var(--card);
+  color: var(--text-color);
+}
 #desc {
   background-color: var(--disabled-background-color);
   color: var(--text-color);
