@@ -4,7 +4,8 @@ import React from 'react';
 import Link from 'next/link';
 import { useTheme } from '../context/ThemeContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faGithub, faLinkedin, faTwitter, faDownload } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import WhatIDo from '../components/WhatIDo';
 import Skills from '../components/Skills';
 import Knowledge from '../components/Knowledge';
@@ -33,34 +34,34 @@ const CertificateSection = () => {
 
   return (
     <div className="flex flex-wrap justify-center">
-    {certificateData.map((item, index) => (
-      <div key={index} className="lg:w-[40%] p-9 font-montserrat">
-        <p className="font-bold text-lg py-4">{item.title}</p>
-        <div className="items-center justify-center">
-          <Image
-            height={450}
-            width={450}
-            src={item.imgSrc}
-            alt={item.imgAlt}
-            className="items-center justify-center"
-          />
-          <div
-            style={{ backgroundColor: theme['--bg-gray'] }}
-            className="lg:p-6 lg:mx-auto p-4 text-center justify-center items-center space-x-2"
-          >
-            <Link
-              href={item.linkHref}
-              download
-              className="font-bold text-lg text-center"
-              style={{ color: theme['--text-secondary'] }}
+      {certificateData.map((item, index) => (
+        <div key={index} className="lg:w-[40%] p-9 font-montserrat">
+          <p className="font-bold text-lg py-4">{item.title}</p>
+          <div className="items-center justify-center">
+            <Image
+              height={450}
+              width={450}
+              src={item.imgSrc}
+              alt={item.imgAlt}
+              className="items-center justify-center"
+            />
+            <div
+              style={{ backgroundColor: theme['--bg-gray'] }}
+              className="lg:p-6 lg:mx-auto p-4 text-center justify-center items-center space-x-2"
             >
-              {item.linkText}
-            </Link>
+              <Link
+                href={item.linkHref}
+                download
+                className="font-bold text-lg text-center"
+                style={{ color: theme['--text-secondary'] }}
+              >
+                {item.linkText}
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    ))}
-  </div>
+      ))}
+    </div>
   );
 };
 
@@ -80,7 +81,7 @@ const Page = () => {
             </h2>
             <div
               style={{ backgroundColor: theme['--bg-gray'] }}
-              className="rounded-2xl   flex flex-col lg:flex-row-reverse justify-center items-center lg:space-x-8"
+              className="rounded-2xl  lg:h-[65vh]  flex flex-col lg:flex-row-reverse justify-center items-center lg:space-x-8"
             >
               <div className="relative flex flex-col lg:bottom-28 items-center p-3">
                 <Image
@@ -116,13 +117,13 @@ const Page = () => {
                   style={{ color: theme['--text-secondary'] }}
                   className="lg:text-xl text-left lg:leading-9"
                 >
-                  Mon objectif est de créer des solutions efficaces, innovantes et personnalisées, qui non seulement résolvent leurs problèmes, mais dépassent leurs attentes. Que ce soit pour la conception de sites web attrayants ou le développement d'applications mobiles performantes, je mets tout en œuvre pour transformer vos idées en réalité.
+                  Mon objectif est de créer des solutions efficaces, innovantes et personnalisées, qui non seulement résolvent leurs problèmes, mais dépassent leurs attentes. Que ce soit pour la conception de sites web attrayants ou le développement d&apos;applications mobiles performantes, je mets tout en œuvre pour transformer vos idées en réalité.
                 </p>
                 <p
                   style={{ color: theme['--text-secondary'] }}
                   className="lg:text-xl text-left lg:leading-9"
                 >
-                  Ensemble, faisons de vos aspirations digitales une réalité dès aujourd'hui !
+                  Ensemble, faisons de vos aspirations digitales une réalité dès aujourd&apos;hui !
                 </p>
               </div>
             </div>
@@ -161,7 +162,7 @@ const Page = () => {
             style={{ color: theme['--warning-color'] }}
             className="lg:text-5xl md:text-3xl text-3xl text-center font-carter-one lg:mb-28"
           >
-            _ Ce que j'aime faire
+            _ Ce que j&apos;aime faire
           </p>
           {/* <p className="text-center font-montserrat lg:text-2xl text-lg mb-12 lg:px-16 px-6">
             Voici un aperçu des activités et technologies que je préfère dans mon travail quotidien.

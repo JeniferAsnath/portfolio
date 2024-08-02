@@ -1,4 +1,5 @@
-"use client";
+'use client';
+
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useTheme } from '../context/ThemeContext';
@@ -39,7 +40,7 @@ const Page = () => {
              
               <p className="font-montserrat font-bold text-2xl">Ne soyez pas timide!</p>
               <p>
-                Je suis toujours ravi(e) de discuter de nouveaux projets, de collaborations ou de répondre à vos questions. N'hésitez pas à me contacter par email, par appel ou via le formulaire de contact ci-dessous.
+                Je suis toujours ravi(e) de discuter de nouveaux projets, de collaborations ou de répondre à vos questions. N&apos;hésitez pas à me contacter par email, par appel ou via le formulaire de contact ci-dessous.
               </p>
               <div className="flex flex-col gap-4 py-6 mx-auto">
                 <div className="flex items-center gap-2">
@@ -53,7 +54,7 @@ const Page = () => {
                   <FontAwesomeIcon 
                   color={theme['--bg-brown']}
                   icon={faPhone} className="text-2xl" />
-                  <span>Phone</span>
+                  <span>Téléphone</span>
                 </div>
                 <span onClick={() => setIsModalOpen(true)} className="text-blue-500 hover:underline pl-10 cursor-pointer">{phoneNumber}</span>
                 <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} phoneNumber={phoneNumber} />
@@ -149,7 +150,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-       
     </main>
   );
 };

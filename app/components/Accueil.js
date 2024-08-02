@@ -41,7 +41,8 @@ const Accueil = () => {
                             Je suis une créatrice passionnée du web et du mobile. Mon objectif est de réaliser vos aspirations digitales avec des solutions innovantes.
                         </p>
                         <p className="text-xl text-left leading-9  justify-center items-center ">
-                        À travers chaque projet, je m efforce de créer des expériences en ligne qui non seulement captivent votre audience, mais qui reflètent également votre identité unique.                         </p>
+                            À travers chaque projet, je m&apos;efforce de créer des expériences en ligne qui non seulement captivent votre audience, mais qui reflètent également votre identité unique.
+                        </p>
                         <div className='flex gap-8 lg:flex-row flex-col'>
                             <div className="flex lg:float-left float-right justify-center items-center ">
                                 <Link id="cv" href="/about" target="" className="text-lg px-6 py-3 rounded-xl">
