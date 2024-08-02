@@ -5,11 +5,7 @@ import { themes } from '../theme/themes';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(themes.light);
-
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === themes.light ? themes.dark : themes.light));
-  };
+  const [theme] = useState(themes.dark);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -20,7 +16,7 @@ export const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme }}>
       {children}
     </ThemeContext.Provider>
   );

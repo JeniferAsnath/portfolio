@@ -48,10 +48,18 @@ body {
   font-family: 'Carter One';
 }
 
-nav {
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: auto; */
+  /* overflow: hidden; */
+}
+
+/* nav {
   background-color: var(--disabled-background-color);
   color: var(--text-color);
-}
+} */
 
 #logo {
   /* font-family: 'Carter One', sans-serif; */
@@ -62,19 +70,25 @@ nav {
 }
 
 #tech {
-  background-color: var(--card);
-  color: var(--text-color);
+  background-color: var(--bg-gray);
+  color: var(--text-secondary);
 }
 #pro{
   background-color: var(--disabled-background-color);
 }
+h1{
+  color: var(--text-secondary);
+}
+h2{
+  color: var(--bg-brown);
+}
 #cv{
-  background-color: var(--card);
-  color: var(--text-color);
+  background-color: var(--bg-brown);
+  color: var(--text);
 }
 #cont{
-  background-color: var(--card);
-  color: var(--text-color);
+  background-color: var(--bg-brown);
+  color: var(--text);
 }
 #link{
   background-color: var(--card);
